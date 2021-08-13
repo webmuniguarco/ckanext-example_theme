@@ -1,0 +1,55 @@
+<section class="homepage-stats">
+    {% set stats = h.get_site_statistics() %}         
+    <div class="container">
+
+        <div class="row" align="center">
+            <div class="col-md-3 col-sm-6">
+                <a class="homepage-footer-stats" href="dataset">
+                  <h3 class="homepage-count"> 
+                      <span>{{ stats.dataset_count }}</span>  
+                      <img src="/example_theme_stats/datasets.png"></h3>
+                  <h2 class="homepage-count-description"> Datasets </h2>
+                </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <a class="homepage-footer-stats" href="/organization">
+                <h3 class="homepage-count"> 
+                    <span>{{ stats.organization_count }}</span> 
+                    <img src="/example_theme_stats/organization.png"> </h3>
+                 <h2 class="homepage-count-description"> Organizations </h2>
+                </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <a class="homepage-footer-stats" href="/">
+                <h3 class="homepage-count"> NO <img src="/example_theme_stats/categories.png"></h3>
+                 <h2 class="homepage-count-description"> Categories </h2>
+                </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <a class="homepage-footer-stats" href="dataset">
+                  <h3 class="homepage-count"> <span>NO</span>  <img src="/example_theme_stats/application.png"></h3>
+                  <h2 class="homepage-count-description"> Showcases </h2>
+                </a>
+            </div>
+        </div>
+        
+        <hr class="homepage-footer-divider">
+        <div class="hidden-sm hidden-xs">
+            <div class="row-fluid">
+                <div class="col-md-8 sm-12">
+                    <h1 class="homepage-footer-desc-heading">Open Data Pakistan</h1>
+                    <p class="homepage-footer-description">
+                        Open Data Pakistan is brought to you by the National Center for Big Data and Cloud Computing (NCBC), Lahore University of Management Sciences (LUMS) and Higher Education Commission (HEC). It is a collaborative effort to help provide open data to all kinds of users.
+                    </p>
+                </div>
+                <div class="col-md-2 col-sm-offset-1 sm-12">
+                    <img class="homepage-footer-logo-image" src="/footerlogo.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  -->
