@@ -1,7 +1,7 @@
 {% set tags = h.get_facet_items_dict('tags', c.search_facets, limit=4) %}
 {% set placeholder = _('E.g. environment') %}
 
-<div class="module module-search module-narrow module-shallow">
+<div class="module module-search2 module-narrow module-shallow">
   <form class="module-content search-form" method="get" action="{% url_for 'dataset.search' %}">
     <div class="heading">{{ _("Portal de datos abiertos") }}</div>
 	<div class="heading2" style="text-align: left;">{{ _("Gestión moderna y transparente") }}</div>
