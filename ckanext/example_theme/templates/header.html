@@ -1,3 +1,15 @@
+{% ckan_extends %}
+
+{% block styles %}
+  {{ super() }}
+  
+  
+  {# % resource "example_theme/example_theme.css" % #}
+  <link rel="stylesheet" href="/custom_style.css" />
+
+
+{% endblock %}
+
 {% block header_wrapper %} {% block header_account %}
 <div class="account-masthead">
   <div class="container">
