@@ -44,7 +44,7 @@ def most_popular_groups():
 
 def all_categories():
     all_categories_list = []
-    
+
     category = {}
     category['text'] = "Agriculture, Food & Forests"
     category['img_src'] = "/example_theme_categories/agriculture.png"
@@ -134,11 +134,11 @@ def all_categories():
 def popular_datasets(limit=4):
     import urllib, json
     site_url = config.get('ckan.site_url', None)
-    
+
     url = site_url + "/api/3/action/package_search?q=&sort=views_total+desc"
     response = urllib.urlopen(url)
     dict = json.loads(response.read())
-    
+
 
     count = dict['result']['count']
     datasets = []
@@ -176,7 +176,7 @@ class ExampleThemePlugin(plugins.SingletonPlugin):
                 toolkit.get_validator('boolean_validator')]
             })
         return schema
-    
+ 
     def update_config(self, config):
 
         # Add this plugin's templates dir to CKAN's extra_template_paths, so
