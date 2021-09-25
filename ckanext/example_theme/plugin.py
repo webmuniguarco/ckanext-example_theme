@@ -1,20 +1,20 @@
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
-
+from ckan.common import config
 
 class ExampleThemePlugin(plugins.SingletonPlugin):
-        '''An example theme plugin.
 
-        '''
-        # Declare that this class implements IConfigurer.
-        plugins.implements(plugins.IConfigurer)
+'''An example theme plugin.
 
-        def update_config(self, config):
+'''
 
-    # Add this plugin's templates dir to CKAN's extra_template_paths, so
-    # that CKAN will use this plugin's custom templates.
-    toolkit.add_template_directory(config, 'templates')
+# Declare that this class implements IConfigurer.
+  plugins.implements(plugins.IConfigurer)
 
-    # Add this plugin's public dir to CKAN's extra_public_paths, so
-    # that CKAN will use this plugin's custom static files.
-    toolkit.add_public_directory(config, 'public')
+    def update_config(self, config):
+
+        # Add this plugin's templates dir to CKAN's extra_template_paths, so
+        # that CKAN will use this plugin's custom templates.
+        toolkit.add_template_directory(config, 'templates')
+        toolkit.add_public_directory(config, 'public')
+        toolkit.add_resource('example_theme')
