@@ -9591,7 +9591,7 @@ h4 small {
 }
 @media (min-width: 768px) {
   .hero {
-    background: url("../../../base/images/fondo_datos_abiertos_sa.jpg");
+    background: url("fondo_datos_abiertos_sa.jpg");
 	height: 10vh;
     min-height: 560px;
     background-size: cover;
@@ -9624,7 +9624,7 @@ h4 small {
 
 @media (min-width: 320px) {
   .hero {
-    background: url("../../../base/images/fondo_datos_abiertos_sa.jpg");
+    background: url("fondo_datos_abiertos_sa.jpg");
 	height: 10vh;
     min-height: 560px;
     background-size: cover;
@@ -10354,7 +10354,7 @@ a.stadisticas:hover {
   width: 68px;
   height: 21px;
   margin-top: 2px;
-  background: url("../../../base/images/ckan-logo-footer.png") no-repeat top left;
+  background: url("ckan-logo-footer.png") no-repeat top left;
   text-indent: -900em;
 }
 .lang-select:before,
