@@ -1,3 +1,10 @@
+{% ckan_extends %}
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="/example_theme.css" />
+{% endblock %}
+
 {# Allows the DOCTYPE to be set on a page by page basis #}
 {%- block doctype %}<!DOCTYPE html>{% endblock -%}
 
