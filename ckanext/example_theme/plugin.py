@@ -22,3 +22,4 @@ class ExampleThemePlugin(plugins.SingletonPlugin):
         # plugin.py file.
         toolkit.add_template_directory(config, 'templates')
         toolkit.add_public_directory(config, 'public')
+        toolkit.add_resource('fanstatic', 'example_theme')
