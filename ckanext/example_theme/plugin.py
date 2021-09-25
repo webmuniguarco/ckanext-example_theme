@@ -4,10 +4,6 @@ from ckan.common import config
 
 class ExampleThemePlugin(plugins.SingletonPlugin):
 
-'''An example theme plugin.
-
-'''
-
 # Declare that this class implements IConfigurer.
   plugins.implements(plugins.IConfigurer)
 
