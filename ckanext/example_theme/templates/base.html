@@ -1,11 +1,10 @@
 {% ckan_extends %}
 
-{% block styles %}
+{%- block links -%}
   {{ super() }}
-  
-  
-  {# % resource "example_theme/example_theme.css" % #}
-  <link rel="stylesheet" href="/custom_style.css" />
+{% endblock %}
 
-
+{%- block custom_styles %}
+  {{ super() }}
+   <link rel="stylesheet" href="/custom_style.css" />
 {% endblock %}
