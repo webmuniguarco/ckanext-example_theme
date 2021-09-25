@@ -1,0 +1,54 @@
+
+
+
+Hola buebn día,
+
+Hemos ingresado los datos en el sistema para que se pueda realizar el pago dpor la renovación anual del servidor, pero se genera el siguiente mensaje
+The ACH transaction failed to complete, please try again or contact your bank for more information
+
+Los datos de la cuenta bancaria son:
+
+Banco de Costa Rica
+Dirección: Avenida Central y Segunda, calles 4 y 6 San José, Costa Rica.
+IBAN: CR22015201001025348439
+Código Swift: BCRICRSJ
+UID (Universal ID): 019339
+Nombre: MUNICIPALIDAD DE SANTA ANA
+
+Datos Bancarios:
+
+Banco de Costa Rica.
+
+- Dirección: Avenida Central y Segunda, calles 4 y 6 San José, Costa Rica.
+
+- Código Swift: BCRICRSJ.
+
+- UID (Universal ID): 019339.
+
+
+
+Routin Number: 019339
+Account Number: CR22015201001025348439  
+Bank Account Type: Checking
+First Name: Municipalidad
+Last Name: Santa Ana
+Address: Diagonal a la iglesia católica en Santa Ana Centro
+City: Santa Ana
+Zip Code: 346150
+Country: San José
+Province: San José
+
+
+
+BCRICRSJ
+
+ IBAN: CR22015201001025348439  
+ 
+ 
+You can attempt to send through ACH
+Receiving Bank Name: Hancock Whitney Bank
+Bank ABA / Routing Number: 021052053
+Beneficiary Account Number: 57559293
+Beneficiary Account Name: Hivelocity Ventures Corporation
+Please confirm Transaction ID once completed
+

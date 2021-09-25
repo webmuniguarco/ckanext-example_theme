@@ -1,0 +1,15 @@
+{% set organizations = h.get_featured_organizations() %}
+
+{% for organization in organizations %}
+  <div class="boxprincipal">
+  <div class="heading4">{{ _("Organización destacada") }}</div>
+    {% snippet 'snippets/organization_item.html', organization=organization, truncate=100, truncate_title=45 %}
+  <div class="box3">
+  {% if organization.package_count %}
+        <p> Total registros:</p> <strong>{{ ungettext('{num} Dataset', '{num} Datasets', organization.package_count).format(num=organization.package_count) }}</strong>
+      {% else %}
+        <span>{{ _('0 Datasets') }}</span>
+      {% endif %}
+	</div>
+  </div>
+{% endfor %}

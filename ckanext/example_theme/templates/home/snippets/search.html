@@ -1,0 +1,25 @@
+{% set tags = h.get_facet_items_dict('tags', c.search_facets, limit=4) %}
+{% set placeholder = _('E.g. environment') %}
+
+<div class="module module-search module-narrow module-shallow">
+  <form class="module-content search-form" method="get" action="{% url_for 'dataset.search' %}">
+    <div class="heading">{{ _("Portal de datos abiertos") }}</div>
+	<div class="heading2" style="text-align: left;">{{ _("Gestión moderna y transparente") }}</div>
+	<div class="heading3" style="text-align: left;">{{ _("Un recurso para el uso, reutilización y diseminación de datos abiertos <br>Municipalidad de Santa Ana") }}</div>
+    <div class="search-input form-group search-giant">
+      <input aria-label="{% block header_site_search_label %}{{ _('Search datasets') }}{% endblock %}" id="field-main-search" type="text" class="form-control" name="q" value="" autocomplete="off" placeholder="{% block search_placeholder %}{{ placeholder }}{% endblock %}" />
+      <button type="submit" aria-labelledby="search-label">
+        <i class="fa fa-search"></i>
+        <span class="sr-only" id="search-label">{{ _('Search') }}</span>
+      </button>
+    </div>
+  </form>
+  <div class="tags dataset-headin">
+    <strong>{{ _('Etiquetas destacadas') }}</strong>
+<div>
+    {% for tag in tags %}
+      <a class="tag" href="{% url_for 'dataset.search', tags=tag.name %}">{{ h.truncate(tag.display_name, 22) }}</a>
+    {% endfor %}
+  </div>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+{% set topics = [
+  {
+    "label" : "Gobierno local",
+    "fa-icon" : "university"
+  },
+  {
+    "label" : "Informes auditorias",
+    "fa-icon" : "file-text"
+  },
+  {
+    "label" : "Servicios trámites",
+    "fa-icon" : "check-square"
+  },
+  {
+    "label" : "Presupuestos",
+    "fa-icon" : "dollar"
+  },
+  {
+    "label" : "Compras contrataciones",
+    "fa-icon" : "handshake-o"
+  },
+  {
+    "label" : "Población",
+    "fa-icon" : "users"
+  },
+  {
+    "label" : "Ambiente",
+    "fa-icon" : "leaf"
+  },
+  {
+    "label" : "Recursos humanos",
+    "fa-icon" : "male"
+  },
+  {
+    "label" : "Riesgos",
+    "fa-icon" : "map-signs"
+  },
+  {
+    "label" : "Desarrollo humano",
+    "fa-icon" : "cogs"
+  }
+]
+%}
+
+{% for iter1 in [0,5] %}
+<div class="row">
+  {% for iter2 in [0,1,2,3,4,] %}
+  {% set i = (iter1+iter2) %}
+  <a href="/{{ request.environ.CKAN_LANG }}/dataset/?q={{ _(topics[i]['label'])|replace(' ','+')|replace(',','') }}" class="hp_category">
+    <div class="col-md-2-10 col-xs-5 margencategorias">
+      <i class="fa fa-{{topics[i]['fa-icon']}}"></i> <br>
+        {{ _(topics[i]['label']) }}
+    </div>
+  </a>
+  {% endfor %}
+  </div>
+{% endfor %}
+
