@@ -9591,7 +9591,7 @@ h4 small {
 }
 @media (min-width: 768px) {
   .hero {
-    background: url("/fondo_datos_abiertos_sa.jpg");
+    background: url("./fondo_datos_abiertos_sa.jpg");
 	height: 10vh;
     min-height: 560px;
     background-size: cover;
@@ -9624,7 +9624,7 @@ h4 small {
 
 @media (min-width: 320px) {
   .hero {
-    background: url("/fondo_datos_abiertos_sa.jpg");
+    background: url("./fondo_datos_abiertos_sa.jpg");
 	height: 10vh;
     min-height: 560px;
     background-size: cover;
