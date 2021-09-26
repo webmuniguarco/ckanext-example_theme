@@ -23,3 +23,17 @@ class ExampleThemePlugin(plugins.SingletonPlugin):
         toolkit.add_template_directory(config, 'templates')
 #        toolkit.add_public_directory(config, 'public')
 #        toolkit.add_resource('fanstatic', 'example_theme')
+
+    def get_helpers(self):
+        '''Register the most_popular_groups() function above as a template
+        helper function.
+        '''
+        # Template helper function names should begin with the name of the
+        # extension they belong to, to avoid clashing with functions from
+        # other extensions.
+        return {'example_theme_most_popular_groups': most_popular_groups,
+                'example_theme_show_most_popular_groups':
+                show_most_popular_groups,
+                'example_theme_recent_datasets' : most_recent_datasets,
+                'example_theme_popular_datasets' : popular_datasets,
+                }
