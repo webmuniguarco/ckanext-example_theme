@@ -59,18 +59,18 @@
   </div>
 </div>
 {% endblock %}
-<header class="navbar navbar-static-top masthead2">
+<header class="navbar2 navbar2-static-top masthead2">
   {% block header_debug %} {% if g.debug and not g.debug_supress_header %}
   <div class="debug">Controller : {{ c.controller }}<br/>Action : {{ c.action }}</div>
   {% endif %} {% endblock %}
   <div class="container">
-    <div class="navbar-right">
-      <button data-target="#main-navigation-toggle" data-toggle="collapse" class="navbar-toggle collapsed" type="button" aria-label="expand or collapse" aria-expanded="false">
+    <div class="navbar2-right">
+      <button data-target="#main-navigation-toggle" data-toggle="collapse" class="navbar2-toggle collapsed" type="button" aria-label="expand or collapse" aria-expanded="false">
         <span class="sr-only">{{ _('Toggle navigation') }}</span>
         <span class="fa fa-bars"></span>
       </button>
     </div>
-    <hgroup class="{{ g.header_class }} navbar-left">
+    <hgroup class="{{ g.header_class }} navbar2-left">
       {% block header_logo %} {% if g.site_logo %}
       <a class="logo" href="{{ h.url_for('home.index') }}"><img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="{{ g.site_title }}" title="{{ g.site_title }}" /></a>
       {% else %}
@@ -81,7 +81,7 @@
       <h2>{{ g.site_description }}</h2>{% endif %} {% endif %} {% endblock %}
     </hgroup>
 
-    <div class="collapse navbar-collapse" id="main-navigation-toggle">
+    <div class="collapse navbar2-collapse" id="main-navigation-toggle">
       {% block header_site_navigation %}
       <nav class="section navigation">
         <ul class="nav nav-pills">
