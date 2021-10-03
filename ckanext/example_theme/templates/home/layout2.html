@@ -1,35 +1,51 @@
 <div role="main" class="hero">
-  <div class="container">
-    <div class="row row1">
-      <div class="col-md-6 col1">
-        {% block search %}
-          {% snippet 'home/snippets/search.html' %}
-        {% endblock %}
-        {% block stats %}
-          {% snippet 'home/snippets/stats.html' %}
-        {% endblock %}
-      </div>
-      <div class="col-md-6 col2">
-        {% block promoted %}
-          {% snippet 'home/snippets/promoted.html' %}
-        {% endblock %}
-      </div>
-    </div>
-  </div>
+    <div class="container">
+	<div class="col-md-8 col">
+    {% block search %}
+      {% snippet 'home/snippets/search.html' %}
+    {% endblock %}
+   </div>
 </div>
-<div role="main">
-  <div class="container">
+</div>
+	
+  <div class="main">
+  <div class="container" id="topics">
+  
+    {% block stats %}
+      {% snippet 'home/snippets/stats.html' %}
+    {% endblock %}
+	
+  <hr size="2px" color="black" <hr/>
+  
+  
+  
     <div class="row row2">
-      <div class="col-md-6 col2">
-        {% block featured_organization %}
-          {% snippet 'home/snippets/featured_organization.html' %}
-        {% endblock %}
+      <div class="col-md-12 col1">
+        <h2>{{ _("Contexto de Datos") }}</h2>
       </div>
-      <div class="col-md-6 col1">
-        {% block featured_group %}
-          {% snippet 'home/snippets/featured_group.html' %}
-        {% endblock %}
+    </div>
+    {% snippet 'home/snippets/theme_categories.html' %}
+  </div>
+  
+  
+  <div class="main">
+    <div class="container">
+      <div class="row row2">
+        <div class="col-md-6 col1">
+          {# Note: this featured_group block is used as an example in the theming
+             tutorial in the docs! If you change this code, be sure to check
+             whether you need to update the docs. #}
+          {# Start template block example. #}
+          {% block featured_group %}
+            {% snippet 'home/snippets/featured_group.html' %}
+          {% endblock %}
+          {# End template block example. #}
+        </div>
+        <div class="col-md-6 col2">
+          {% block featured_organization %}
+            {% snippet 'home/snippets/featured_organization.html' %}
+          {% endblock %}
+        </div>
       </div>
     </div>
   </div>
-</div>

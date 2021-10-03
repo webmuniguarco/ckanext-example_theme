@@ -1,20 +1,33 @@
-<div role="main">
-  <div class="main hero">
+<div role="main" class="hero">
     <div class="container">
-      <div class="row row1">
-        <div class="col-md-6 col1">
-          {% block promoted %}
-            {% snippet 'home/snippets/promoted.html' %}
-          {% endblock %}
-        </div>
-        <div class="col-md-6 col2">
-          {% block search %}
-            {% snippet 'home/snippets/search.html' %}
-          {% endblock %}
-        </div>
+	<div class="col-md-8 col">
+    {% block search %}
+      {% snippet 'home/snippets/search.html' %}
+    {% endblock %}
+   </div>
+</div>
+</div>
+	
+  <div class="main">
+  <div class="container" id="topics">
+  
+    {% block stats %}
+      {% snippet 'home/snippets/stats.html' %}
+    {% endblock %}
+	
+  <hr size="2px" color="black" <hr/>
+  
+  
+  
+    <div class="row row2">
+      <div class="col-md-12 col1">
+        <h2>{{ _("Contexto de Datos") }}</h2>
       </div>
     </div>
+    {% snippet 'home/snippets/theme_categories.html' %}
   </div>
+  
+  
   <div class="main">
     <div class="container">
       <div class="row row2">
@@ -36,4 +49,3 @@
       </div>
     </div>
   </div>
-</div>
