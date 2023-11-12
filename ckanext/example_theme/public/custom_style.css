@@ -8767,7 +8767,7 @@ td.diff_header {
   max-width: 85px;
 }
 .toolbar {
-    background: #00354C;
+    background: #9db049;
     box-shadow: 3px 3px 1px #ccc;
     /* border: 3px solid #FFF; */
     border-radius: 4px;
@@ -9591,7 +9591,7 @@ h4 small {
 }
 @media (min-width: 768px) {
   .hero {
-    background: url("./fondo_datos_abiertos.jpg");
+    background: url("./fondo_datos_abiertos_sa.jpg");
 	height: 10vh;
     min-height: 560px;
     background-size: cover;
@@ -9955,7 +9955,7 @@ a.stadisticas:hover {
 .account-masthead {
   min-height: 30px;
   color: #fff;
-  background: #00354C;
+  background: #237dbc;
 }
 .account-masthead:before,
 .account-masthead:after {
@@ -9995,7 +9995,7 @@ a.stadisticas:hover {
 .account-masthead .account ul li {
   display: block;
   float: left;
-  border-left: 1px solid #022340;
+  border-left: 1px solid #ffffff24;
 }
 .account-masthead .account ul li a {
   display: block;
@@ -10212,7 +10212,7 @@ a.stadisticas:hover {
   margin-bottom: initial;
   padding: 30px 0;
   color: #fff;
-  background: #00354C;
+  background: #23527B;
   padding: 20px 0;
 }
 .site-footer:before,
